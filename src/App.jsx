@@ -4,11 +4,13 @@ import HomePage from "./Pages/HomePage/HomePage";
 import HelpPage from "./Pages/HelpPage/HelpPage";
 import SupportPage from "./Pages/SupportPage/SupportPage";
 import NotFoundPage from "./Pages/NotFoundPage/NotFoundPage";
+import NavBar from "./Components/NavBar/NavBar";
 
 function App() {
 	return (
 		<>
 			<BrowserRouter>
+				<NavBar />
 				<Routes>
 					<Route path="/" element={<HomePage />} />
 					<Route path="/support" element={<SupportPage />} />

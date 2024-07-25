@@ -1,11 +1,5 @@
 @use "./variables" as *;
 
-@mixin mobile-big {
-	@media (min-width: 25rem) {
-		@content;
-	}
-}
-
 @mixin tablet {
 	@media (min-width: $tablet-breakpoint) {
 		@content;
@@ -33,10 +27,6 @@
 @mixin flex-center-horizontal {
 	display: flex;
 	justify-content: center;
-}
-
-@mixin custom-pointer {
-	cursor: url("/icons/cursor.svg"), pointer !important;
 }
 
 @mixin box-shadow {
