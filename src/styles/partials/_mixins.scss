@@ -1,0 +1,44 @@
+@use "./variables" as *;
+
+@mixin mobile-big {
+	@media (min-width: 25rem) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@media (min-width: $tablet-breakpoint) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: $desktop-breakpoint) {
+		@content;
+	}
+}
+
+@mixin iPhone15 {
+	@media only screen and (min-device-width: 393px) and (max-device-width: 852px) and (-webkit-min-device-pixel-ratio: 3) {
+		@content;
+	}
+}
+
+@mixin flex-center-both {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flex-center-horizontal {
+	display: flex;
+	justify-content: center;
+}
+
+@mixin custom-pointer {
+	cursor: url("/icons/cursor.svg"), pointer !important;
+}
+
+@mixin box-shadow {
+	box-shadow: 0 2px 5px black;
+}
