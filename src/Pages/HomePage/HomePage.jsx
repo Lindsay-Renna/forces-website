@@ -1,13 +1,16 @@
 import { Link } from "react-router-dom";
 import "./HomePage.scss";
+import Carousel from "../../Components/Carousel/Carousel";
 
 function HomePage() {
+	const images = ["/images/desktop1.png", "/images/web2.png"];
+
 	return (
 		<main className="home">
-			<hero>
-				<h1 className="home__header">
+			<section className="hero">
+				<h1 className="hero__header">
 					Don't print out an army list
-					<span className="home__header--teal"> EVER AGAIN</span>
+					<span className="hero__header--teal"> EVER AGAIN</span>
 				</h1>
 				<p>
 					View and organize your BattleScribe army lists with Forces, designed
@@ -30,7 +33,8 @@ function HomePage() {
 						/>
 					</Link>
 				</div>
-			</hero>
+			</section>
+			<Carousel images={images} />
 		</main>
 	);
 }

@@ -1,0 +1,44 @@
+@use "../../styles/partials/global" as *;
+
+.carousel {
+	position: relative;
+	max-width: 100%;
+	overflow: hidden;
+
+	&__btn {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		background-color: rgba(0, 0, 0, 0.5);
+		color: white;
+		font-size: 1.5rem;
+		border: none;
+		padding: 1rem;
+		cursor: pointer;
+		z-index: 1;
+		transition: background-color 0.3s;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.8);
+		}
+
+		&--prev {
+			left: 0;
+		}
+
+		&--next {
+			right: 0;
+		}
+	}
+
+	&__img {
+		max-width: 10rem;
+		height: auto;
+		display: block;
+		transition: transform 0.3s ease-in-out;
+
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+}
