@@ -70,7 +70,9 @@ function NavBar() {
 						key={item.id}
 						to={item.path}
 						className={({ isActive }) =>
-							isActive ? "nav-list__link--active" : "nav-list__link"
+							isActive
+								? "nav-list__link nav-list__link--active"
+								: "nav-list__link"
 						}
 						onClick={() => setHamburgerOpen(false)}
 					>

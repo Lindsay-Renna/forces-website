@@ -1,0 +1,28 @@
+@use "../../styles/partials/global" as *;
+
+.home {
+	margin: 3rem 0;
+	padding: 0 1rem;
+
+	&__header {
+		font-size: 2rem;
+		font-weight: 800;
+
+		&--teal {
+			color: $ForcesTeal;
+		}
+	}
+}
+
+.app-stores {
+	@include flex-center-both;
+	flex-direction: column;
+	padding: 0 1rem;
+	margin: 2rem 0;
+	gap: 1rem;
+
+	&__badge {
+		width: 12rem;
+		height: auto;
+	}
+}
