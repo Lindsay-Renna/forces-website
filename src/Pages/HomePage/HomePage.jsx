@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
+import React, { useRef, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
 import "./HomePage.scss";
-import Carousel from "../../Components/Carousel/Carousel";
 
 function HomePage() {
-	const images = ["/images/desktop1.png", "/images/web2.png"];
-
 	return (
 		<main className="home">
 			<section className="hero">
@@ -34,7 +38,51 @@ function HomePage() {
 					</Link>
 				</div>
 			</section>
-			<Carousel images={images} />
+			<Swiper
+				centeredSlides={true}
+				navigation={true}
+				pagination={{
+					clickable: true,
+				}}
+				keyboard={true}
+				slidesPerView={"1"}
+				modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+				className="mySwiper"
+			>
+				<SwiperSlide>
+					<h3 className="mySwiper__title">MacOS</h3>
+					<div className="mySwiper__image__wrapper">
+						<img
+							className="mySwiper__image"
+							src="/images/desktop1.png"
+							alt="MacOS"
+						/>
+					</div>
+				</SwiperSlide>
+				<SwiperSlide>
+					<h3 className="mySwiper__title">iOS</h3>
+					<img className="mySwiper__image" src="/images/web2.png" alt="MacOS" />
+				</SwiperSlide>
+				<SwiperSlide>Slide 3</SwiperSlide>
+				<SwiperSlide>Slide 4</SwiperSlide>
+			</Swiper>
+			<section className="features">
+				<h1>some features</h1>
+				<ul className="features__list">
+					<li className="features__item">
+						<h4>Supports all your favourite Game Systems</h4>
+						<p>
+							Warhammer 40K, Warhammer Age of Sigmar, Warhammer The Horus
+							Heresy, Aeronautica Imperialis, Adeptus Titanicus, Middle-earth
+							Strategy Battle Game, Kill Team, Warcry and more
+						</p>
+					</li>
+					<li className="features__item"></li>
+					<li className="features__item"></li>
+					<li className="features__item"></li>
+					<li className="features__item"></li>
+				</ul>
+			</section>
 		</main>
 	);
 }
