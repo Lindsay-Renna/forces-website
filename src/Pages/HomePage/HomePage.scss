@@ -12,6 +12,26 @@
 			&--teal {
 				color: $ForcesTeal;
 			}
+
+			@include tablet {
+				font-size: 3rem;
+				text-align: center;
+			}
+
+			@include desktop {
+				font-size: 3.75rem;
+			}
+		}
+
+		p {
+			@include tablet {
+				font-size: 1.125rem;
+				text-align: center;
+			}
+
+			@include desktop {
+				font-size: 1.25rem;
+			}
 		}
 	}
 }
@@ -22,6 +42,14 @@
 	padding: 0 1rem;
 	margin: 2rem 0;
 	gap: 1rem;
+
+	@include tablet {
+		flex-direction: row;
+	}
+
+	@include desktop {
+		margin: 4rem 0;
+	}
 
 	&__badge {
 		width: 12rem;
@@ -34,14 +62,19 @@
 	background-color: #f3f4f6;
 	border-radius: 10px;
 	max-height: 40rem;
+	max-width: 70rem;
 
 	&__title {
 		margin: 1rem 0 2rem 0;
 	}
 
 	&__image__wrapper {
-		min-height: 20rem;
+		min-height: 22rem;
 		@include flex-center-both;
+
+		@include tablet {
+			min-height: 30rem;
+		}
 	}
 
 	.swiper {
@@ -63,8 +96,10 @@
 	.swiper-slide img {
 		display: block;
 		width: 100%;
+		max-width: 50rem;
+		max-height: 27rem;
 		height: auto;
-		object-fit: cover;
+		object-fit: contain;
 	}
 
 	.swiper-slide {
@@ -113,14 +148,32 @@
 
 .features {
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 	padding: 0 1rem;
 	margin: 2rem 0;
+
+	@include tablet {
+		justify-content: center;
+		align-items: stretch;
+		max-width: 70rem;
+		margin: auto;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
 
 	&__card {
 		display: flex;
 		align-items: flex-start;
 		margin: 1rem 0;
+		padding: 1rem;
+		border-radius: 5px;
+		box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.178);
+
+		@include tablet {
+			width: 40%;
+			flex-grow: 1;
+		}
 	}
 
 	&__text {
