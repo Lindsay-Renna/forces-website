@@ -33,6 +33,7 @@
 	margin-bottom: 3rem;
 	background-color: #f3f4f6;
 	border-radius: 10px;
+	max-height: 40rem;
 
 	&__title {
 		margin: 1rem 0 2rem 0;
@@ -111,7 +112,39 @@
 }
 
 .features {
-	&__list {
-		list-style: url();
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 1rem;
+
+	&__card {
+		display: flex;
+		align-items: flex-start;
+		margin: 1rem 0;
+	}
+
+	&__text {
+		margin: 0 0.5rem;
+
+		a {
+			white-space: nowrap;
+		}
+	}
+
+	&__bullet {
+		padding-top: 0.25rem;
+	}
+
+	&__title {
+		font-weight: 700;
+		margin: 0;
+	}
+
+	&__link {
+		background-color: $ForcesTeal;
+		text-decoration: none;
+		color: white;
+		border-radius: 5px;
+		padding: 0.25rem;
+		font-weight: 700;
 	}
 }

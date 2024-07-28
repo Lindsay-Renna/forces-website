@@ -67,21 +67,97 @@ function HomePage() {
 				<SwiperSlide>Slide 4</SwiperSlide>
 			</Swiper>
 			<section className="features">
-				<h1>some features</h1>
-				<ul className="features__list">
-					<li className="features__item">
-						<h4>Supports all your favourite Game Systems</h4>
+				<div className="features__card">
+					<img
+						className="features__bullet"
+						src="/icons/check-circle.svg"
+						alt="checkmark circle"
+					/>
+					<div className="features__text">
+						<p className="features__title">
+							Supports all your favourite Game Systems
+						</p>
 						<p>
 							Warhammer 40K, Warhammer Age of Sigmar, Warhammer The Horus
 							Heresy, Aeronautica Imperialis, Adeptus Titanicus, Middle-earth
-							Strategy Battle Game, Kill Team, Warcry and more
+							Strategy Battle Game, Kill Team, Warcry and <strong>more</strong>{" "}
 						</p>
-					</li>
-					<li className="features__item"></li>
-					<li className="features__item"></li>
-					<li className="features__item"></li>
-					<li className="features__item"></li>
-				</ul>
+					</div>
+				</div>
+				<div className="features__card">
+					<img
+						className="features__bullet"
+						src="/icons/check-circle.svg"
+						alt="checkmark circle"
+					/>
+					<div className="features__text">
+						<p className="features__title">Mathhammer</p>
+						<p>
+							How much damage will 40{" "}
+							<Link
+								className="features__link"
+								to="https://www.games-workshop.com/en-CA/orruk-warclans-hobgrot-slittas-2021"
+							>
+								Hobgrots
+							</Link>{" "}
+							do to a{" "}
+							<Link
+								className="features__link"
+								to="https://www.warhammer.com/en-CA/shop/gatebreaker-mega-gargant-2022?queryID=578c13789e36abff64a1aeecdd5362ce"
+							>
+								Mega-Gargant?
+							</Link>
+						</p>
+					</div>
+				</div>
+				<div className="features__card">
+					<img
+						className="features__bullet"
+						src="/icons/check-circle.svg"
+						alt="checkmark circle"
+					/>
+					<div className="features__text">
+						<p className="features__title">Meta</p>
+						<p>
+							Generate game system meta reports - which army is being used most
+							these days? What are the top units for my faction and how many do
+							people take?
+						</p>
+					</div>
+				</div>
+				<div className="features__card">
+					<img
+						className="features__bullet"
+						src="/icons/check-circle.svg"
+						alt="checkmark circle"
+					/>
+					<div className="features__text">
+						<p className="features__title">
+							Made for all your portable devices
+						</p>
+						<p>
+							Forces is written natively to run smoothly on the mobile device of
+							your choice. Whether you're rocking an Android tablet or an Apple
+							iPhone to the gaming table Forces will run and look great on it.
+						</p>
+					</div>
+				</div>
+				<div className="features__card">
+					<img
+						className="features__bullet"
+						src="/icons/check-circle.svg"
+						alt="checkmark circle"
+					/>
+					<div className="features__text">
+						<p className="features__title">Alerts</p>
+						<p>
+							Forces uses push notifications to alert you to the changes you
+							care about. Subscribe to be alerted when a specific Battlescribe
+							dataset are updated, or when a specific topic is posted about on
+							Warhammer Community.
+						</p>
+					</div>
+				</div>
 			</section>
 		</main>
 	);
