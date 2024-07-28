@@ -96,6 +96,7 @@ function HomePage() {
 							How much damage will 40{" "}
 							<Link
 								className="features__link"
+								target="_blank"
 								to="https://www.games-workshop.com/en-CA/orruk-warclans-hobgrot-slittas-2021"
 							>
 								Hobgrots
@@ -103,6 +104,7 @@ function HomePage() {
 							do to a{" "}
 							<Link
 								className="features__link"
+								target="_blank"
 								to="https://www.warhammer.com/en-CA/shop/gatebreaker-mega-gargant-2022?queryID=578c13789e36abff64a1aeecdd5362ce"
 							>
 								Mega-Gargant?
