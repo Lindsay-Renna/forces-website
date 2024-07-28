@@ -1,0 +1,21 @@
+@use "../../styles/partials/global" as *;
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	background-color: $ForcesLightGrey;
+
+	&__socials {
+		@include flex-center-both;
+		margin: 2rem;
+		gap: 1.5rem;
+
+		img {
+			width: 24px;
+		}
+	}
+
+	&__copyright {
+		@include flex-center-both;
+	}
+}
