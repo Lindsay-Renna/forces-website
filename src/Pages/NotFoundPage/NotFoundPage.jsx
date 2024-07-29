@@ -1,7 +1,7 @@
 import "./NotFoundPage.scss";
 
 function NotFoundPage() {
-	return <div>NotFoundPage</div>;
+	return <div>404 - page not found</div>;
 }
 
 export default NotFoundPage;

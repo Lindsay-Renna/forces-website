@@ -6,7 +6,7 @@ import { useState, useEffect, useRef } from "react";
 const navListArr = [
 	{ name: "Forces", path: "/", id: 0 },
 	{ name: "Support", path: "/support", id: 1 },
-	{ name: "Help", path: "/help", id: 2 },
+	{ name: "FAQ", path: "/faq", id: 2 },
 ];
 
 function NavBar() {
