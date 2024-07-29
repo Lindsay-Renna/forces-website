@@ -1,0 +1,70 @@
+@use "../../styles/partials/global" as *;
+
+.faq {
+	@include flex-center-both;
+	flex-direction: column;
+	padding: 0 1rem;
+
+	&__box {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+		margin: 1rem 0;
+
+		@include tablet {
+			justify-content: flex-start;
+		}
+	}
+
+	&__question {
+		color: $ForcesTeal;
+		font-size: 1.5rem;
+		margin-bottom: 0;
+		text-align: center;
+
+		@include tablet {
+			text-align: left;
+		}
+	}
+
+	&__answer {
+		font-size: 1.25rem;
+		text-align: center;
+
+		@include tablet {
+			text-align: left;
+		}
+	}
+
+	&__section {
+		color: $ForcesGrey;
+		font-size: 1.5rem;
+		text-decoration: underline;
+	}
+
+	&__images {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 1rem;
+		margin: 1rem 0;
+
+		img {
+			height: 22rem;
+
+			@include tablet {
+				height: 40rem;
+			}
+		}
+	}
+
+	&__link {
+		background-color: $ForcesTeal;
+		text-decoration: none;
+		color: white;
+		border-radius: 5px;
+		padding: 0 0.15rem;
+		font-weight: 700;
+	}
+}
