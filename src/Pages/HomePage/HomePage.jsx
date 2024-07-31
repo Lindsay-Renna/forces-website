@@ -1,5 +1,5 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Link } from "react-router-dom";
-import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
 import "swiper/css";
