@@ -22,6 +22,7 @@ function FAQPage() {
 		<main>
 			<div className="faq">
 				<div className="faq__box">
+					<h3 className="faq__section">General</h3>
 					<Accordion transition transitionTimeout={250}>
 						<AccordionItem header="How do I create and edit rosters?">
 							{" "}
