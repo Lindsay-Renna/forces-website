@@ -10,14 +10,37 @@ import "./HomePage.scss";
 
 const swiperImages = [
 	{ title: "MacOS", image: "/images/desktop1.png", alt: "MacOS" },
-	{ title: "iOS", image: "/images/web2.png", alt: "iOS" },
-	{ title: "iOS", image: "/images/IMG_4488.PNG", alt: "iOS" },
-	{ title: "iOS", image: "/images/IMG_4490.PNG", alt: "iOS" },
-	{ title: "iOS", image: "/images/IMG_4491.PNG", alt: "iOS" },
-	{ title: "iOS", image: "/images/IMG_4492.PNG", alt: "iOS" },
-	{ title: "iOS", image: "/images/IMG_4494.PNG", alt: "iOS" },
-	{ title: "iOS", image: "/images/roster-screenshot.png", alt: "iOS" },
-	{ title: "iOS", image: "/images/simulator-screenshot.png", alt: "iOS" },
+	{ title: "iOS", image: "/images/web2.png", alt: "forces screenshot iOS" },
+	{
+		title: "At a glance overview of your lists",
+		image: "/images/One.png",
+		alt: "forces screenshot android",
+	},
+	{
+		title: " Detailed unit breakdown for all popular game systems",
+		image: "/images/Two.png",
+		alt: "forces screenshot",
+	},
+	{
+		title: "Mathhammer charts",
+		image: "/images/Three.png",
+		alt: "forces screenshot",
+	},
+	{
+		title: "Run unit match up experiments",
+		image: "/images/Four.png",
+		alt: "forces screenshot",
+	},
+	{
+		title: "Customize units with names & notes",
+		image: "/images/Five.png",
+		alt: "forces screenshot",
+	},
+	{
+		title: "Meta breakdowns",
+		image: "/images/Six.png",
+		alt: "forces screenshot",
+	},
 ];
 
 function HomePage() {
@@ -52,6 +75,7 @@ function HomePage() {
 			</section>
 			<Swiper
 				centeredSlides={true}
+				loop={true}
 				navigation={true}
 				pagination={{
 					clickable: true,
