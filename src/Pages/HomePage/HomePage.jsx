@@ -8,6 +8,18 @@ import "swiper/css/pagination";
 
 import "./HomePage.scss";
 
+const swiperImages = [
+	{ title: "MacOS", image: "/images/desktop1.png", alt: "MacOS" },
+	{ title: "iOS", image: "/images/web2.png", alt: "iOS" },
+	{ title: "iOS", image: "/images/IMG_4488.PNG", alt: "iOS" },
+	{ title: "iOS", image: "/images/IMG_4490.PNG", alt: "iOS" },
+	{ title: "iOS", image: "/images/IMG_4491.PNG", alt: "iOS" },
+	{ title: "iOS", image: "/images/IMG_4492.PNG", alt: "iOS" },
+	{ title: "iOS", image: "/images/IMG_4494.PNG", alt: "iOS" },
+	{ title: "iOS", image: "/images/roster-screenshot.png", alt: "iOS" },
+	{ title: "iOS", image: "/images/simulator-screenshot.png", alt: "iOS" },
+];
+
 function HomePage() {
 	return (
 		<main className="home">
@@ -49,22 +61,20 @@ function HomePage() {
 				modules={[Navigation, Pagination, Mousewheel, Keyboard]}
 				className="mySwiper"
 			>
-				<SwiperSlide>
-					<h3 className="mySwiper__title">MacOS</h3>
-					<div className="mySwiper__image__wrapper">
-						<img
-							className="mySwiper__image"
-							src="/images/desktop1.png"
-							alt="MacOS"
-						/>
-					</div>
-				</SwiperSlide>
-				<SwiperSlide>
-					<h3 className="mySwiper__title">iOS</h3>
-					<img className="mySwiper__image" src="/images/web2.png" alt="MacOS" />
-				</SwiperSlide>
-				<SwiperSlide>Slide 3</SwiperSlide>
-				<SwiperSlide>Slide 4</SwiperSlide>
+				{swiperImages.map((image, index) => {
+					return (
+						<SwiperSlide key={index}>
+							<h3 className="mySwiper__title">{image.title}</h3>
+							<div className="mySwiper__image__wrapper">
+								<img
+									className="mySwiper__image"
+									src={image.image}
+									alt={image.alt}
+								/>
+							</div>
+						</SwiperSlide>
+					);
+				})}
 			</Swiper>
 			<section className="features">
 				<div className="features__card">

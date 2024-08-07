@@ -65,12 +65,12 @@
 	max-width: 70rem;
 
 	&__title {
-		margin: 1rem 0 2rem 0;
+		margin: 1rem 0;
 	}
 
 	&__image__wrapper {
 		min-height: 22rem;
-		@include flex-center-both;
+		@include flex-center-horizontal;
 
 		@include tablet {
 			min-height: 30rem;

@@ -1,7 +1,8 @@
+// Roboto Font family
 @font-face {
 	font-family: "Roboto";
-	src: url("Roboto-BlackItalic.woff2") format("woff2"),
-		url("Roboto-BlackItalic.woff") format("woff");
+	src: url("src/assets/fonts/Roboto-BlackItalic.woff2") format("woff2"),
+		url("src/assets/fonts/Roboto-BlackItalic.woff") format("woff");
 	font-weight: 900;
 	font-style: italic;
 	font-display: swap;
@@ -9,8 +10,8 @@
 
 @font-face {
 	font-family: "Roboto";
-	src: url("Roboto-Black.woff2") format("woff2"),
-		url("Roboto-Black.woff") format("woff");
+	src: url("src/assets/fonts/Roboto-Black.woff2") format("woff2"),
+		url("src/assets/fonts/Roboto-Black.woff") format("woff");
 	font-weight: 900;
 	font-style: normal;
 	font-display: swap;
@@ -18,8 +19,8 @@
 
 @font-face {
 	font-family: "Roboto";
-	src: url("Roboto-Bold.woff2") format("woff2"),
-		url("Roboto-Bold.woff") format("woff");
+	src: url("src/assets/fonts/Roboto-Bold.woff2") format("woff2"),
+		url("src/assets/fonts/Roboto-Bold.woff") format("woff");
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
@@ -27,8 +28,8 @@
 
 @font-face {
 	font-family: "Roboto";
-	src: url("Roboto-LightItalic.woff2") format("woff2"),
-		url("Roboto-LightItalic.woff") format("woff");
+	src: url("src/assets/fonts/Roboto-LightItalic.woff2") format("woff2"),
+		url("src/assets/fonts/Roboto-LightItalic.woff") format("woff");
 	font-weight: 300;
 	font-style: italic;
 	font-display: swap;
@@ -36,8 +37,8 @@
 
 @font-face {
 	font-family: "Roboto";
-	src: url("Roboto-MediumItalic.woff2") format("woff2"),
-		url("Roboto-MediumItalic.woff") format("woff");
+	src: url("src/assets/fonts/Roboto-MediumItalic.woff2") format("woff2"),
+		url("src/assets/fonts/Roboto-MediumItalic.woff") format("woff");
 	font-weight: 500;
 	font-style: italic;
 	font-display: swap;
@@ -45,8 +46,8 @@
 
 @font-face {
 	font-family: "Roboto";
-	src: url("Roboto-Light.woff2") format("woff2"),
-		url("Roboto-Light.woff") format("woff");
+	src: url("src/assets/fonts/Roboto-Light.woff2") format("woff2"),
+		url("src/assets/fonts/Roboto-Light.woff") format("woff");
 	font-weight: 300;
 	font-style: normal;
 	font-display: swap;
@@ -54,8 +55,8 @@
 
 @font-face {
 	font-family: "Roboto";
-	src: url("Roboto-Italic.woff2") format("woff2"),
-		url("Roboto-Italic.woff") format("woff");
+	src: url("src/assets/fonts/Roboto-Italic.woff2") format("woff2"),
+		url("src/assets/fonts/Roboto-Italic.woff") format("woff");
 	font-weight: normal;
 	font-style: italic;
 	font-display: swap;
@@ -63,8 +64,8 @@
 
 @font-face {
 	font-family: "Roboto";
-	src: url("Roboto-Medium.woff2") format("woff2"),
-		url("Roboto-Medium.woff") format("woff");
+	src: url("src/assets/fonts/Roboto-Medium.woff2") format("woff2"),
+		url("src/assets/fonts/Roboto-Medium.woff") format("woff");
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -72,8 +73,8 @@
 
 @font-face {
 	font-family: "Roboto";
-	src: url("Roboto-BoldItalic.woff2") format("woff2"),
-		url("Roboto-BoldItalic.woff") format("woff");
+	src: url("src/assets/fonts/Roboto-BoldItalic.woff2") format("woff2"),
+		url("src/assets/fonts/Roboto-BoldItalic.woff") format("woff");
 	font-weight: bold;
 	font-style: italic;
 	font-display: swap;
@@ -81,8 +82,8 @@
 
 @font-face {
 	font-family: "Roboto";
-	src: url("Roboto-Regular.woff2") format("woff2"),
-		url("Roboto-Regular.woff") format("woff");
+	src: url("src/assets/fonts/Roboto-Regular.woff2") format("woff2"),
+		url("src/assets/fonts/Roboto-Regular.woff") format("woff");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -90,8 +91,8 @@
 
 @font-face {
 	font-family: "Roboto";
-	src: url("Roboto-ThinItalic.woff2") format("woff2"),
-		url("Roboto-ThinItalic.woff") format("woff");
+	src: url("src/assets/fonts/Roboto-ThinItalic.woff2") format("woff2"),
+		url("src/assets/fonts/Roboto-ThinItalic.woff") format("woff");
 	font-weight: 100;
 	font-style: italic;
 	font-display: swap;
@@ -99,9 +100,175 @@
 
 @font-face {
 	font-family: "Roboto";
-	src: url("Roboto-Thin.woff2") format("woff2"),
-		url("Roboto-Thin.woff") format("woff");
+	src: url("src/assets/fonts/Roboto-Thin.woff2") format("woff2"),
+		url("src/assets/fonts/Roboto-Thin.woff") format("woff");
 	font-weight: 100;
 	font-style: normal;
+	font-display: swap;
+}
+
+// Kode Mono Font family
+
+@font-face {
+	font-family: "Kode Mono";
+	src: url("src/assets/fonts/KodeMono-Medium.woff2") format("woff2"),
+		url("src/assets/fonts/KodeMono-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Kode Mono";
+	src: url("src/assets/fonts/KodeMono-Bold.woff2") format("woff2"),
+		url("src/assets/fonts/KodeMono-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Kode Mono";
+	src: url("src/assets/fonts/KodeMono-Regular.woff2") format("woff2"),
+		url("src/assets/fonts/KodeMono-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Kode Mono";
+	src: url("src/assets/fonts/KodeMono-SemiBold.woff2") format("woff2"),
+		url("src/assets/fonts/KodeMono-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+// Rubik Font Family
+
+@font-face {
+	font-family: "Rubik";
+	src: url("src/assets/fonts/Rubik-Black.woff2") format("woff2"),
+		url("src/assets/fonts/Rubik-Black.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("src/assets/fonts/Rubik-BlackItalic.woff2") format("woff2"),
+		url("src/assets/fonts/Rubik-BlackItalic.woff") format("woff");
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("src/assets/fonts/Rubik-Bold.woff2") format("woff2"),
+		url("src/assets/fonts/Rubik-Bold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("src/assets/fonts/Rubik-BoldItalic.woff2") format("woff2"),
+		url("src/assets/fonts/Rubik-BoldItalic.woff") format("woff");
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("src/assets/fonts/Rubik-ExtraBold.woff2") format("woff2"),
+		url("src/assets/fonts/Rubik-ExtraBold.woff") format("woff");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("src/assets/fonts/Rubik-ExtraBoldItalic.woff2") format("woff2"),
+		url("src/assets/fonts/Rubik-ExtraBoldItalic.woff") format("woff");
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("src/assets/fonts/Rubik-Italic.woff2") format("woff2"),
+		url("src/assets/fonts/Rubik-Italic.woff") format("woff");
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("src/assets/fonts/Rubik-Light.woff2") format("woff2"),
+		url("src/assets/fonts/Rubik-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("src/assets/fonts/Rubik-LightItalic.woff2") format("woff2"),
+		url("src/assets/fonts/Rubik-LightItalic.woff") format("woff");
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("src/assets/fonts/Rubik-Medium.woff2") format("woff2"),
+		url("src/assets/fonts/Rubik-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("src/assets/fonts/Rubik-MediumItalic.woff2") format("woff2"),
+		url("src/assets/fonts/Rubik-MediumItalic.woff") format("woff");
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("src/assets/fonts/Rubik-Regular.woff2") format("woff2"),
+		url("src/assets/fonts/Rubik-Regular.woff") format("woff");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("src/assets/fonts/Rubik-SemiBold.woff2") format("woff2"),
+		url("src/assets/fonts/Rubik-SemiBold.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("src/assets/fonts/Rubik-SemiBoldItalic.woff2") format("woff2"),
+		url("src/assets/fonts/Rubik-SemiBoldItalic.woff") format("woff");
+	font-weight: 600;
+	font-style: italic;
 	font-display: swap;
 }
