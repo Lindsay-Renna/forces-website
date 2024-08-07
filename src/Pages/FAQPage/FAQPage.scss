@@ -36,11 +36,12 @@
 	}
 
 	&__answer {
-		font-size: 1.25rem;
+		font-size: 1rem;
 		text-align: center;
 
 		@include tablet {
 			text-align: left;
+			font-size: 1.25rem;
 		}
 	}
 
@@ -71,7 +72,7 @@
 		color: white;
 		border-radius: 5px;
 		padding: 0 0.15rem;
-		font-weight: 700;
+		font-weight: 600;
 	}
 }
 

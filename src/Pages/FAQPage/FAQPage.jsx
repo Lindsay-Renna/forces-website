@@ -25,29 +25,30 @@ function FAQPage() {
 					<h3 className="faq__section">General</h3>
 					<Accordion transition transitionTimeout={250}>
 						<AccordionItem header="How do I create and edit rosters?">
-							{" "}
-							Use BattleScribe for PC, Mac, Android or iOS. Alternately check
-							out some browser based options like{" "}
-							<Link
-								to="https://war.cards/"
-								target="_blank"
-								className="faq__link"
-							>
-								war.cards
-							</Link>{" "}
-							or{" "}
-							<Link
-								to="https://www.newrecruit.eu/"
-								target="_blank"
-								className="faq__link"
-							>
-								new recruit
-							</Link>
-							.
+							<p className="faq__answer">
+								Use BattleScribe for PC, Mac, Android or iOS. Alternately check
+								out some browser based options like{" "}
+								<Link
+									to="https://war.cards/"
+									target="_blank"
+									className="faq__link"
+								>
+									war.cards
+								</Link>{" "}
+								or{" "}
+								<Link
+									to="https://www.newrecruit.eu/"
+									target="_blank"
+									className="faq__link"
+								>
+									new recruit
+								</Link>
+								.
+							</p>
 						</AccordionItem>
 						<h3 className="faq__section">iOS</h3>
 						<AccordionItem header="How do I get my rosters in Forces?">
-							<p>
+							<p className="faq__answer">
 								In BattleScribe press the share button, press Battlescribe
 								Roster file, and select Forces.
 							</p>
